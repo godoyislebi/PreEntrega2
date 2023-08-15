@@ -1,0 +1,15 @@
+.shop{
+    display:grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 40px;
+    padding-top: 24px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid $color_terciario;
+    .shop-title{
+        font-weight: 600;
+        color: $color_terciario;
+        margin: 30px 0;
+        text-align: center;
+    }
+}

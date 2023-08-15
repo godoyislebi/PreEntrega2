@@ -1,0 +1,27 @@
+.card-product{
+    width: 290px;
+    height: 100%;
+    border: $color_terciario 1px solid;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    .card-product-body{
+        padding: 10px;
+        h5{
+            font-weight: 600;
+        }
+        .card-product-btn{
+            display: flex;
+            justify-content: flex-end;
+            align-items: end;
+            .btn-sasha{
+                @extend %btn-sasha;
+             }
+        }
+     }
+    
+}
