@@ -1,0 +1,6 @@
+@mixin fondo($bg-header, $background-size-cover, $background-position-top, $height-90){
+    background-image: $bg-header;
+    background-size: $background-size-cover;
+    background-position: $background-position-top;
+    height: $height-90;
+}

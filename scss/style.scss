@@ -1,5 +1,7 @@
 @import "variables.scss";
 @import "reset.scss";
+@import "mixin.scss";
+@import "mediaquery.scss";
 @import "header.scss";
 @import "about.scss";
 @import "shop.scss";
@@ -7,5 +9,4 @@
 @import "map.scss";
 @import "card.scss";
 @import "extend.scss";
-@import "mediaquery.scss";
 @import "footer.scss";
