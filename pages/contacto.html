@@ -16,11 +16,12 @@
     <title>Sasha Velour</title>
 </head>
 <body class="bg-sasha">
+    <!--Header-->
     <header>
         <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
             <div class="container">
               <a class="navbar-brand" href="#">
-                <img src="../multimedia/img/NewSVLogo.WIDE.png" class="img-fluid" alt="Bootstrap" width="144" height="53">
+                <img src="../multimedia/img/NewSVLogo.WIDE.png" class="img-fluid" alt="sasha velour en letras blancas que funciona como icono del sitio" width="144" height="53">
               </a>
               <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -40,25 +41,36 @@
             </div>
         </nav>
     </header>
-    <main class="container-fluid">
+    <!-- Fin Header-->
+
+    <main class="container contact">
+        <h2 class="contact-title">Contacto</h2>
         <!-- Formulario de contacto-->
-        <section class="container">
             <div class="row">
                 <div class="col-12">
-                    <form action="https://formsubmit.co/islebi.pinto.godoy24@gmail.com" method="POST">
-                        <input type="text" name="Ingresa tu nombre" required>
-                        <input type="email" name="Ingresa tu correo" required>
-                        <textarea name="comentario" id="" cols="30" rows="10" required></textarea>
-                        <button class="btn btn-sasha" type="submit">Enviar</button>
-                   </form>
+                    <form target="_blank" action="https://formsubmit.co/islebi.pinto.godoy24@gmail.com" class="contact-form" method="POST">
+                        <div class="form-group">
+                          <div class="form-row">
+                            <div class="col">
+                              <input type="text" name="name" class="form-control" placeholder="Ingresa tu nombre" required>
+                            </div>
+                            <div class="col mt-3">
+                              <input type="email" name="email" class="form-control" placeholder="Ingresa tu correo" required>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-group mt-3">
+                          <textarea placeholder="Escribe tu mensaje" class="form-control" name="message" rows="10" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-lg btn-block btn-sasha mt-4">Enviar</button>
+                      </form>
                 </div>
             </div>
-        </section>
+        <!-- Fin formulario de contacto-->
 
         <!-- Mapa -->
-        <section class="container contact" id="contact">
-            <h2 class="contact-title">Contacto</h2>
-            <div class="contact-map responsive-map-container">
+        <section class="contact-map">
+            <div class="responsive-map-container">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3026.4647120213826!2d-73.96508778255615!3d40.66372860000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25caa3dd99035%3A0x99c0ae57817f35a6!2sFlatbush%20Ave%2C%20Brooklyn%2C%20NY%2011225%2C%20EE.%20UU.!5e0!3m2!1ses!2scl!4v1688545649173!5m2!1ses!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="contact-info">
@@ -70,8 +82,10 @@
                 </address>
             </div>
         </section>
+        <!-- Fin Mapa -->
     </main>
 
+    <!--Footer-->
     <footer class="container-fluid bg-sasha footer-sasha">
         <section class="container">
             <div class="row">
@@ -93,6 +107,6 @@
             </div>
         </section>
     </footer>
-    
+    <!--Fin footer-->
 </body>
 </html>

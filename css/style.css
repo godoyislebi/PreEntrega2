@@ -16,63 +16,6 @@ body {
   color: #ffffff;
 }
 
-/*Media Queries*/
-@media (min-width: 768px) {
-  .about {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: start;
-  }
-
-  .about-title, .contact-title {
-    grid-column: 1/3;
-    text-align: center;
-  }
-
-  .contact {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-  }
-
-  .banner {
-    height: 50%;
-  }
-
-  .shop {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-    gap: 40px;
-    padding-top: 48px;
-    padding-bottom: 48px;
-  }
-
-  .footer-sasha {
-    padding: 40px 0;
-  }
-}
-@media (min-width: 1200px) {
-  .about {
-    align-items: center;
-  }
-
-  .banner {
-    height: 400px;
-  }
-
-  .banner-img {
-    height: 100%;
-    width: 100%;
-  }
-
-  .shop {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    gap: 40px;
-  }
-}
 .header-sasha {
   background-image: url(../multimedia/img/header.jpg);
   background-size: cover;
@@ -114,11 +57,14 @@ body {
   padding-bottom: 30px;
   border-bottom: 1px solid #F64999;
 }
-.shop .shop-title {
+
+.shop-title {
   font-weight: 600;
   color: #F64999;
   margin: 30px 0;
   text-align: center;
+  display: grid;
+  justify-content: center;
 }
 
 .contact {
@@ -131,11 +77,16 @@ body {
   margin: 30px 0;
   text-align: center;
 }
+.contact .contact-form {
+  text-align: end;
+}
+.contact .contact-map {
+  margin-top: 40px;
+}
 
 .responsive-map-container {
   position: relative;
   padding-bottom: 56.25%;
-  padding-top: 30px;
   height: 0;
   overflow: hidden;
 }
@@ -172,19 +123,103 @@ body {
   justify-content: flex-end;
   align-items: end;
 }
-.card-product .card-product-body .card-product-btn .btn-sasha {
+.contact .btn-sasha, .card-product .card-product-body .card-product-btn .btn-sasha {
   background-color: #F64999;
   font-weight: 600;
   cursor: pointer;
   align-items: end;
 }
-.card-product .card-product-body .card-product-btn .btn-sasha:hover {
+.contact .btn-sasha:hover, .card-product .card-product-body .card-product-btn .btn-sasha:hover {
   background-color: #ffffff;
   color: #F64999;
 }
 
 .footer-sasha {
   padding: 15px 0;
+}
+
+/*Media Queries*/
+@media (min-width: 768px) {
+  .about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: start;
+  }
+
+  .about-title, .contact-title {
+    grid-column: 1/3;
+    text-align: center;
+  }
+
+  .contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  .banner {
+    height: 40%;
+  }
+
+  .shop {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 40px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .shop-title {
+    font-weight: 600;
+    color: #F64999;
+    margin: 30px 0;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+  }
+
+  .footer-sasha {
+    padding: 40px 0;
+  }
+
+  .contact .contact-map {
+    margin-top: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .about {
+    align-items: center;
+  }
+
+  .banner {
+    height: 300px;
+  }
+
+  .banner-img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .contact .contact-map {
+    margin-top: 0;
+  }
+
+  .shop {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 40px;
+  }
+
+  .shop-title {
+    font-weight: 600;
+    color: #F64999;
+    margin: 30px 0;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

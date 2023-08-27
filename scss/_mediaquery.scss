@@ -16,18 +16,31 @@
         gap: 40px;
     }
     .banner{
-        height: 50%;
+        height: 40%;
     }
     .shop{
-        display:grid;
-        grid-template-columns: repeat(2,1fr);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         justify-items: center;
         gap: 40px;
         padding-top: 48px;
         padding-bottom: 48px;
     }
+    .shop-title{
+        font-weight: 600;
+        color: $color_terciario;
+        margin: 30px 0;
+        text-align: center;
+        display: grid;
+        justify-content: center;
+    }
     .footer-sasha{
         padding: 40px 0;
+    }
+    .contact{
+        .contact-map{
+            margin-top: 0;
+        }
     }
 }
 
@@ -36,17 +49,30 @@
         align-items: center;  
     }
     .banner{
-        height: 400px;
+        height: 300px;
     }
     .banner-img{
         height: 100%;
         width: 100%;
     }
+    .contact{
+        .contact-map{
+            margin-top: 0;
+        }
+    }
     .shop{
-        display:grid;
-        grid-template-columns: repeat(3,1fr);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         justify-items: center;
         gap: 40px;
     }
-
+    .shop-title{
+        font-weight: 600;
+        color: $color_terciario;
+        margin: 30px 0;
+        text-align: center;
+        display: grid;
+        justify-content: center;
+    }
+    
 }
