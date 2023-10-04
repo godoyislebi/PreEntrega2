@@ -1,3 +1,19 @@
+/*function Contacto (apellidos, nombres, correo, mensaje){
+  this.apellidos = apellidos;
+  this.nombres = nombres;
+  this.correo = correo;
+  this.mensaje = mensaje; 
+} */
+
+class Contacto {
+  constructor (apellidos, nombres, correo, mensaje){
+    this.apellidos = apellidos;
+    this.nombres = nombres;
+    this.correo = correo;
+    this.mensaje = mensaje;
+  }
+};
+
 const obtenerNombreCompleto = (apellido, nombre) => {
     return apellido + ", " + nombre;
   };
@@ -32,3 +48,4 @@ const obtenerNombreCompleto = (apellido, nombre) => {
   }
   
   alert("¿Gracias por usar nuestro simulador de formulario de contacto!");
+
