@@ -5,6 +5,7 @@
   this.mensaje = mensaje; 
 } */
 
+/*
 class Contacto {
   constructor (apellidos, nombres, correo, mensaje){
     this.apellidos = apellidos;
@@ -18,8 +19,10 @@ const obtenerNombreCompleto = (apellido, nombre) => {
     return apellido + ", " + nombre;
   };
   
+*/
+
  /* Esta función es para simular el backoffice */ 
-  const obtenerDetalleDeRegistro = (surName, name, email, message) => {
+ /* const obtenerDetalleDeRegistro = (surName, name, email, message) => {
     return (
       obtenerNombreCompleto(surName, name) +
       ", con correo electónico: " +
@@ -27,9 +30,10 @@ const obtenerNombreCompleto = (apellido, nombre) => {
       ". Dejó el siguiente mensaje: " +
       message
     );
-  };
+  };*/
+
   
-  let respuestaUsuario = prompt("¿Quieres simular un formulario de contacto?"); 
+  /*let respuestaUsuario = prompt("¿Quieres simular un formulario de contacto?"); 
   while (respuestaUsuario.trim().toUpperCase() === "SI") {
     let apellidos = prompt("Cuál es tú apellido"); 
     let nombres = prompt("Cuál es tú nombre"); 
@@ -47,5 +51,4 @@ const obtenerNombreCompleto = (apellido, nombre) => {
     respuestaUsuario = prompt("¿Quieres simular un formulario de contacto?"); 
   }
   
-  alert("¿Gracias por usar nuestro simulador de formulario de contacto!");
-
+  alert("¿Gracias por usar nuestro simulador de formulario de contacto!");*/
